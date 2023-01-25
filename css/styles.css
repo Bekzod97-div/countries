@@ -60,7 +60,7 @@ body {
     padding: 0;
     margin: 0;
     font-size: 14px;
-    font-family: "Arial", sans-serif;
+    font-family: "Nunito Sans", "Arial", sans-serif;
     line-height: 16px;
     background-color: var(--white-color);
     color: var(--accent-color);
@@ -82,7 +82,6 @@ img {
     max-width: 1440px;
     padding-left: 80px;
     padding-right: 80px;
-    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--bg-color);
@@ -93,10 +92,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+    padding-left: 80px;
+    padding-right: 80px;
     }
 .site-header-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0;
     padding-top: 24px;
-    background-color: inherit;
+    background-color: var(--white-color);
 }
 .site-heading-link {
     display: block;
@@ -116,15 +121,25 @@ img {
     align-items: center;
 }
 .main-btn {
+    display: flex;
     border: 0;
+    background-color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.main-btn-text {
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    background-color: inherit;
     color: var(--accent-color);
     margin-left: 8px;
-    cursor: pointer;
-    white-space: nowrap;
+}
+
+.main-btn:hover {
+    opacity: 0.6;
+}
+.moon-icon {
+    color: var(--accent-color);
 }
 
 /* Main content */
@@ -154,15 +169,6 @@ form {
     color: var(--accent-color);
     outline: none;
     white-space: wrap;
-}
-.search-input::before {
-    width: 18px;
-    height: 18px;
-    background-image: url(../img/search.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center center;
-    content: "";
 }
 
 select {
