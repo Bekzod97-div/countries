@@ -242,28 +242,113 @@ option {
 
 /*Details page styles  */
 .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
 .back-btn {
+    width: 100%;
+    max-width: 135px;
+    display: inline-block;
+    border: 0;
+    color: var(--accent-color);
+    background-color: var(--white-color);
+    padding: 10px 15px 10px 64px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+.back-btn::before {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/call-made.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 .details-img {
+    display: flex;
+    border-radius: 10px;
+    width: 560px;
+    height: 420px;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 .details-content {
+    margin-top: 250px;
+    width: 100%;
+    max-width: 600px;
 }
 .details-content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .details-content-left {
+    width: 100%;
+    max-width: 207px;
+}
+
+.details-content-heading {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 43px;
+    color: var(--accent-color);
+    margin: 0;
+    margin-bottom: 23px;
 }
 .details-content-text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    margin-top: 0;
 }
 .details-content-text-heading {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    margin-right: 5px;
 }
 .details-content-right {
+    width: 100%;
+    max-width: 250px;
 }
 .borders {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 46px;
+    margin-bottom: 0;
 }
+
 .borders-heading {
-}
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    margin-right: 15px;
+    white-space: nowrap;
+    }
+
 .border-btn {
+    padding: 5px 28px;
+    background-color: var(--white-color);
+    color: var(--accent-color);
+    font-weight: 300;
+    border: 0;
+    white-space: nowrap;
+}
+
+.border-btn:not(:last-child) {
+    margin-right: 10px;
 }
