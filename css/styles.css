@@ -61,6 +61,7 @@ body {
     font-family: "Arial", sans-serif;
     line-height: 16px;
     background-color: #fff;
+    color: var(--accent-color);
 }
 
 img {
@@ -76,6 +77,43 @@ img {
     padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Site header styles */
+.site-header {
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 24px;
+}
+.site-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-heading-link {
+    display: block;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+.site-heading {
+    display: block;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.btn-box {
+    display: flex;
+    align-items: center;
+}
+.main-btn {
+    border: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: inherit;
+    margin-left: 8px;
+    cursor: pointer;
 }
 
 /* Main content */
