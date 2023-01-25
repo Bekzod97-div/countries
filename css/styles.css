@@ -160,8 +160,7 @@ form {
     margin-bottom: 48px;
 }
 .search-input {
-    width: 100%;
-    max-width: 480px;
+    min-width: 480px;
     display: inline-block;
     padding-top: 18px;
     padding-bottom: 18px;
@@ -171,6 +170,8 @@ form {
     color: var(--accent-color);
     outline: none;
     white-space: wrap;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
 }
 
 select {
@@ -186,6 +187,7 @@ select {
     margin-bottom: 5px;
     outline: none;
     white-space: wrap;
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.06);
 }
 option {
     display: block;
@@ -207,6 +209,8 @@ option {
     margin-left: 70px;
     background-color: var(--white-color);
     margin-bottom: 50px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
 }
 .countries-link {
     text-decoration: none;
@@ -249,6 +253,9 @@ option {
 }
 
 /*Details page styles  */
+.details-container {
+    padding-bottom: 340px;
+}
 .details {
     display: flex;
     align-items: center;
@@ -264,25 +271,28 @@ option {
 .back-btn {
     width: 100%;
     max-width: 135px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     border: 0;
-    color: var(--accent-color);
+    border-radius: 3px;
     background-color: var(--white-color);
-    padding: 10px 15px 10px 64px;
+    padding: 10px 15px 10px 32px;
     margin-top: 80px;
     margin-bottom: 80px;
+    line-height: 24px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+}
+.back-btn-text {
+    color: var(--accent-color);
     font-weight: 300;
     font-size: 16px;
-    line-height: 24px;
 }
-.back-btn::before {
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/call-made.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
+
+.back-icon {
+    color: var(--accent-color);
+    margin-right: 10px;
 }
+
 .details-img {
     display: flex;
     border-radius: 10px;
@@ -292,7 +302,7 @@ option {
     flex-shrink: 0;
 }
 .details-content {
-    margin-top: 250px;
+    margin-top: 230px;
     width: 100%;
     max-width: 600px;
 }
@@ -353,8 +363,10 @@ option {
     background-color: var(--white-color);
     color: var(--accent-color);
     font-weight: 300;
+    border-radius: 2px;
     border: 0;
     white-space: nowrap;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .border-btn:not(:last-child) {
