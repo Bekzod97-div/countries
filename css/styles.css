@@ -159,6 +159,19 @@ form {
     justify-content: space-between;
     margin-bottom: 48px;
 }
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 32px;
+    top: 19px;
+    bottom: 19px;
+    color: var(--accent-color);
+    pointer-events: none;
+}
 .search-input {
     min-width: 480px;
     display: inline-block;
